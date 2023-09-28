@@ -50,5 +50,182 @@
     <div class="numer">
         <b><a>574 808 172</a></b>
     </div>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: #ffffff;
+            color: #000000;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 10px;
+        }
+        section {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        footer {
+            background-color: #000000;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            font-size: 10px;
+        }
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #5bd83b;
+            color: white;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:nth-child(odd) {
+            background-color: #e5e5e5;
+        }
+        td:first-child {
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+        }
+        td:last-child {
+            border-top-right-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        .header2 {
+            text-align: center;
+            font-size: 40px;
+        }
+        .header3 {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="header3">
+        <h2 class="header2">Lista Zawodników</h2>
+        </div>
+            <thead>
+                <tr>
+                    <!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table {
+            font-family: Arial, sans-serif;
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        #tabelka {
+            text-align: center;
+        }
+    </style>
+<table>
+    <thead>
+        <tr>
+            <th id="tabelka">Klub</th>
+            <th id="tabelka">Imie</th>
+            <th id="tabelka">Nazwisko</th>
+            <th id="tabelka">Pozycja</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td id="tabelka">Inter Miami</td>
+            <td id="tabelka">Leo</td>
+            <td id="tabelka">Messi</td>
+            <td id="tabelka">ŚN</td>
+        </tr>
+        <tr>
+            <td id="tabelka">Real Madryt</td>
+            <td id="tabelka">Jude</td>
+            <td id="tabelka">Bellingham</td>
+            <td id="tabelka">PO</td>
+        </tr>
+        <tr>
+            <td rowspan="2" id="tabelka">FC Barcelona</td>
+            <td id="tabelka">Robert</td>
+            <td id="tabelka">Lewandowski</td>
+            <td id="tabelka">N</td>
+        </tr>
+        <tr>
+            <td id="tabelka">Ronald</td>
+            <td id="tabelka">Araujo</td>
+            <td id="tabelka">ŚO</td>
+        </tr>
+    </tbody>
+</table>
+</head>
+</html>
+    </section>
+    <footer>
+        <p>© 2023 Adrian Podolski</p>
+        <p>Data: <span id="currentDate"></span></p>
+    </footer>
+    <script>
+
+function aktualizujDate() {
+			const currentDateElement = document.getElementById("currentDate");
+			const aktualnaData = new Date();
+			currentDateElement.textContent = aktualnaData.toLocaleDateString() + " " + aktualnaData.toLocaleTimeString();
+		}
+
+		// Wywołanie funkcji aktualizującej datę na początku
+		aktualizujDate();
+
+		// Ustawienie interwału, aby odświeżać datę co sekundę
+		setInterval(aktualizujDate, 1000);
+	
+</script>
+</body>
+</html>
 </body>
 </html>
