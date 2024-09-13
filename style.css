@@ -1,0 +1,14 @@
+body {
+    font-family: Garamond;
+}
+
+table {
+    margin:auto;
+    text-align: center;
+    border: 1px solid #795548;
+    width: 80%;
+}
+tr:hover {
+    background-color: sienna;
+    color: white;
+}
